@@ -1,0 +1,59 @@
+plugins {
+	id 'fabric-loom' version '1.17.11'
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	// Simple Voice Chat (henkelmax) maven – hosts the voicechat-api artifact
+	maven {
+		name = 'Henkelmax'
+		url = 'https://maven.maxhenkel.de/repository/public'
+	}
+	// Cloth Config
+	maven { url = 'https://maven.shedaniel.me/' }
+	// Mod Menu
+	maven { url = 'https://maven.terraformersmc.com/releases/' }
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// Simple Voice Chat plugin API – needed only at compile time. The full
+	// Simple Voice Chat mod must be present at runtime (on the client) for this
+	// addon to do anything; that is declared as a dependency in fabric.mod.json.
+	modCompileOnly "de.maxhenkel.voicechat:voicechat-api:${project.voicechat_api_version}"
+
+	// In-game settings screen (optional at runtime – see fabric.mod.json "suggests").
+	modImplementation("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
+}
+
+processResources {
+	inputs.property "version", project.version
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+	it.options.encoding = 'UTF-8'
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}

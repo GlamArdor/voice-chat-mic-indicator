@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "voicechat_mic_indicator",
+	"version": "${version}",
+	"name": "Voice Chat Mic Indicator",
+	"description": "An add-on for Simple Voice Chat that draws a microphone indicator above the head of any player who is talking, even when their name tag is hidden.",
+	"authors": [
+		"Glam_Ardor"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/voicechat_mic_indicator/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.glamardor.micindicator.MicIndicatorClient"
+		],
+		"voicechat": [
+			"com.glamardor.micindicator.VoicechatAddonPlugin"
+		],
+		"modmenu": [
+			"com.glamardor.micindicator.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": ">=1.21.6 <1.21.12",
+		"java": ">=21",
+		"fabric-api": "*",
+		"voicechat": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"cloth-config": "*"
+	}
+}

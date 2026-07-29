@@ -1,0 +1,23 @@
+{
+	"config.voicechat_mic_indicator.title": "Voice Chat Mic Indicator",
+	"config.voicechat_mic_indicator.category": "Основные",
+	"config.voicechat_mic_indicator.enabled": "Показывать значок",
+	"config.voicechat_mic_indicator.enabled.tooltip": "Включить или выключить значок микрофона над головой.",
+	"config.voicechat_mic_indicator.show_self": "Показывать свой значок",
+	"config.voicechat_mic_indicator.show_self.tooltip": "Показывать значок над своей головой (только от третьего лица).",
+	"config.voicechat_mic_indicator.size": "Размер значка",
+	"config.voicechat_mic_indicator.size.tooltip": "Размер значка в пикселях.",
+	"config.voicechat_mic_indicator.opacity": "Прозрачность",
+	"config.voicechat_mic_indicator.opacity.tooltip": "0% — полностью прозрачный, 100% — непрозрачный.",
+	"config.voicechat_mic_indicator.height": "Высота над головой",
+	"config.voicechat_mic_indicator.height.tooltip": "Насколько высоко над головой висит значок, в блоках.",
+	"config.voicechat_mic_indicator.distance": "Дистанция отрисовки",
+	"config.voicechat_mic_indicator.distance.tooltip": "Максимальная дистанция, на которой рисуется значок, в блоках.",
+	"config.voicechat_mic_indicator.through_walls": "Видно сквозь стены",
+	"config.voicechat_mic_indicator.through_walls.tooltip": "Когда включено, значок виден, даже если игрок за блоками.",
+	"config.voicechat_mic_indicator.pulse": "Пульсация по громкости",
+	"config.voicechat_mic_indicator.pulse.tooltip": "Значок слегка увеличивается, когда игрок говорит громче.",
+	"config.voicechat_mic_indicator.fade": "Плавное появление",
+	"config.voicechat_mic_indicator.fade.tooltip": "Плавно появлять и гасить значок вместо резкого включения/выключения.",
+	"config.voicechat_mic_indicator.blocks": "%s блоков"
+}
