@@ -2,10 +2,10 @@
 
 ## 1.0.1
 
-- Fixed: the icon was hidden by Minecraft's clouds — it now renders at the very
+- Fixed: the icon was hidden by Minecraft's clouds – it now renders at the very
   end of the world pass, so clouds (and weather) no longer cover it.
 - Fixed: whispering players showed an icon from far away even when they could not
-  be heard — the icon now respects the actual audible range of the sound, so a
+  be heard – the icon now respects the actual audible range of the sound, so a
   whisper only shows within whisper range.
 
 ## 1.0.0
