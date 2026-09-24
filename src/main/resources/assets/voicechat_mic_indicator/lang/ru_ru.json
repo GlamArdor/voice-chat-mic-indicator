@@ -8,7 +8,7 @@
 	"config.voicechat_mic_indicator.size": "Размер значка",
 	"config.voicechat_mic_indicator.size.tooltip": "Размер значка в пикселях.",
 	"config.voicechat_mic_indicator.opacity": "Прозрачность",
-	"config.voicechat_mic_indicator.opacity.tooltip": "0% — полностью прозрачный, 100% — непрозрачный.",
+	"config.voicechat_mic_indicator.opacity.tooltip": "0% – полностью прозрачный, 100% – непрозрачный.",
 	"config.voicechat_mic_indicator.height": "Высота над головой",
 	"config.voicechat_mic_indicator.height.tooltip": "Насколько высоко над головой висит значок, в блоках.",
 	"config.voicechat_mic_indicator.distance": "Дистанция отрисовки",
