@@ -1,0 +1,23 @@
+{
+	"config.voicechat_mic_indicator.title": "Voice Chat Mic Indicator",
+	"config.voicechat_mic_indicator.category": "General",
+	"config.voicechat_mic_indicator.enabled": "Show indicator",
+	"config.voicechat_mic_indicator.enabled.tooltip": "Turn the over-the-head microphone indicator on or off.",
+	"config.voicechat_mic_indicator.show_self": "Show my own indicator",
+	"config.voicechat_mic_indicator.show_self.tooltip": "Show the indicator above your own head (third person only).",
+	"config.voicechat_mic_indicator.size": "Icon size",
+	"config.voicechat_mic_indicator.size.tooltip": "Size of the icon, in pixels.",
+	"config.voicechat_mic_indicator.opacity": "Opacity",
+	"config.voicechat_mic_indicator.opacity.tooltip": "0% = fully transparent, 100% = solid.",
+	"config.voicechat_mic_indicator.height": "Height above head",
+	"config.voicechat_mic_indicator.height.tooltip": "How high above the head the icon sits, in blocks.",
+	"config.voicechat_mic_indicator.distance": "Render distance",
+	"config.voicechat_mic_indicator.distance.tooltip": "Maximum distance at which the icon is drawn, in blocks.",
+	"config.voicechat_mic_indicator.through_walls": "Visible through walls",
+	"config.voicechat_mic_indicator.through_walls.tooltip": "When on, the icon shows even when the player is behind blocks.",
+	"config.voicechat_mic_indicator.pulse": "Pulse with loudness",
+	"config.voicechat_mic_indicator.pulse.tooltip": "The icon grows slightly when the player talks louder.",
+	"config.voicechat_mic_indicator.fade": "Fade in/out",
+	"config.voicechat_mic_indicator.fade.tooltip": "Smoothly fade the icon in and out instead of popping on and off.",
+	"config.voicechat_mic_indicator.blocks": "%s blocks"
+}

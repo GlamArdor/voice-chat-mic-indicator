@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "voicechat_mic_indicator-test",
+	"version": "1.0.0",
+	"name": "voicechat_mic_indicator tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"com.glamardor.micindicator.test.MicIndicatorGameTest"
+		]
+	},
+	"depends": {
+		"voicechat_mic_indicator": "*"
+	}
+}
